@@ -1,0 +1,28 @@
+﻿@model IEnumerable<DeltaCore.Models.Product>
+
+<div class="container">
+	<div class="row">
+		<div class="col-10 offset-1">
+			<table class="table table-hover table-striped table-bordered table-active ">
+			<thead class="text-center bg-dark text-light">
+				<tr>
+					<th>ProductID</th>
+					<th>Name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+					@foreach(var d in Model)
+					{
+						<tr class="text-center">
+							<td>@d.ProductId</td>
+							<td>@d.Name</td>
+							<td>@d.Description</td>
+						</tr>
+
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
